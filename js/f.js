@@ -31,11 +31,13 @@ $(document).ready(() => {
         $('input').val('')
     })
 })
+// hitting enter button
 $('input').keypress((e) => {
     if (e.which == 13) { //Enter key pressed
         $('.input-group-btn').trigger('click'); //Trigger search button click event
     }
 });
+// clicking search button on enter hit
 $('.input-group-btn').click(() => {
     getData();
 })
