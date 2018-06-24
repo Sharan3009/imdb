@@ -262,7 +262,8 @@ let getData = () => {
 
                     } else {
                         console.log("success");
-                    },
+                    }
+                },
                     // loader
                     beforeSend: () => {
                             $("#movie-container").css('display', 'none');
