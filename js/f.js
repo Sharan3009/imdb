@@ -86,6 +86,7 @@ let getData = () => {
                             $('#category').html(`Category:&nbsp;<span class="text-warning">${category}</span>`)
 
                         } else {
+                        	$('#category').html('N/A')
                             console.log(`No Type Found`);
                         }
                         // validating rating
@@ -94,6 +95,7 @@ let getData = () => {
                             $('#rated').html(data.Rated)
 
                         } else {
+                        	$('#rated').html('N/A')
                             console.log(`No Rated Found`);
                         }
                         // validating release date
@@ -102,6 +104,7 @@ let getData = () => {
                             $('#released').html(data.Released)
 
                         } else {
+                        	$('#released').html('N/A')
                             console.log(`No Released Found`);
                         }
                         // validating runtime
@@ -110,6 +113,7 @@ let getData = () => {
                             $('#runtime').html(data.Runtime)
 
                         } else {
+                        	$('#runtime').html('N/A')
                             console.log(`No Runtime Found`);
                         }
                         // validating ratings
@@ -135,6 +139,7 @@ let getData = () => {
                             $('#metascore').html(data.Metascore)
 
                         } else {
+                        	$('#metascore').html('N/A')
                             console.log(`No Metascore Found`);
                         }
                         // validating genre
@@ -143,6 +148,7 @@ let getData = () => {
                             $('#genre').html(data.Genre)
 
                         } else {
+                        	$('#genre').html('N/A')
                             console.log(`No Genre Found`);
                         }
                         // validating imdbrating
@@ -151,6 +157,7 @@ let getData = () => {
                             $('#imdbrating').html(`${data.imdbRating}<span class="root-font text-muted">/10</span><div class="root-font">${data.imdbVotes}</div>`)
 
                         } else {
+                        	$('#imdbrating').html('N/A')
                             console.log(`No imdbRating Found`);
                         }
                         // validating poster
@@ -169,6 +176,7 @@ let getData = () => {
                             $('#plot').html(data.Plot)
 
                         } else {
+                        	$('#plot').html('N/A')
                             console.log(`No Plot Found`);
                         }
                         // validating awards
@@ -177,6 +185,7 @@ let getData = () => {
                             $('#awards').html(data.Awards)
 
                         } else {
+                        	$('#awards').html('N/A')
                             console.log(`No Awards Found`);
                         }
                         // validing imdbid
@@ -193,6 +202,7 @@ let getData = () => {
                             $('#director').html(data.Director)
 
                         } else {
+                        	$('#director').html('N/A')
                             console.log(`No Director Found`);
                         }
                         if (data.Writer !== null && data.Writer !== undefined) {
@@ -200,6 +210,7 @@ let getData = () => {
                             $('#writer').html(data.Writer)
 
                         } else {
+                        	$('#writer').html('N/A')
                             console.log(`No Writer Found`);
                         }
                         if (data.Actors !== null && data.Actors !== undefined) {
@@ -207,6 +218,7 @@ let getData = () => {
                             $('#actors').html(data.Actors)
 
                         } else {
+                        	$('#actors').html('N/A')
                             console.log(`No Actors Found`);
                         }
                         if (data.Language !== null && data.Language !== undefined) {
@@ -214,6 +226,7 @@ let getData = () => {
                             $('#language').html(data.Language)
 
                         } else {
+                        	$('#language').html('N/A')
                             console.log(`No Language Found`);
                         }
                         if (data.Country !== null && data.Country !== undefined) {
@@ -221,6 +234,7 @@ let getData = () => {
                             $('#country').html(data.Country)
 
                         } else {
+                        	$('#country').html('N/A')
                             console.log(`No Country Found`);
                         }
                         // validating dvd, boxoffice, production, website
@@ -229,6 +243,7 @@ let getData = () => {
                             $('#dvd').html(data.DVD)
 
                         } else {
+                        	$('#dvd').html('N/A')
                             console.log(`No DVD Found`);
                         }
                         if (data.BoxOffice !== null && data.BoxOffice !== undefined) {
@@ -236,6 +251,7 @@ let getData = () => {
                             $('#boxoffice').html(data.BoxOffice)
 
                         } else {
+                        	$('#boxoffice').html('N/A')
                             console.log(`No BoxOffice Found`);
                         }
                         if (data.Production !== null && data.Production !== undefined) {
@@ -243,6 +259,7 @@ let getData = () => {
                             $('#production').html(data.Production)
 
                         } else {
+                        	$('#production').html('N/A')
                             console.log(`No Production Found`);
                         }
                         if (data.Website !== null && data.Website !== undefined && data.Website != "N/A") {
@@ -250,7 +267,7 @@ let getData = () => {
                             $('#website').html(`<a href="${data.Website}" target="_blank">${data.Website}</a>`)
 
                         } else {
-                            $('#website').html(data.Website)
+                            $('#website').html('N/A')
                             console.log(`No Website Found`);
                         }
                     }
